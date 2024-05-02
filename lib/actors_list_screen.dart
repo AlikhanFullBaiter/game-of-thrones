@@ -15,7 +15,18 @@ class ActorsListScreen extends StatelessWidget {
               'Kit Harington',
               'Jon Snow',
               'Kit Harington is a British actor best known for his role as Jon Snow in the Game of Thrones series. He was born on December 26, 1986, in Acton, London. Harington studied acting at the Royal Central School of Speech & Drama, graduating in 2008.'),
-          // Add more actors
+          buildActorItem(
+              context,
+              'assets/img/emilia.jpg',
+              'Emilia Clarke',
+              'Daenerys Targaryen',
+              'Emilia Clarke is an English actress known for her role as Daenerys Targaryen in the Game of Thrones series. She was born on October 23, 1986, in London, England.'),
+          buildActorItem(
+              context,
+              'assets/img/peter.jpeg',
+              'Peter Dinklage',
+              'Tyrion Lannister',
+              'Peter Dinklage is an American actor known for his role as Tyrion Lannister in the Game of Thrones series. He was born on June 11, 1969, in Morristown, New Jersey, USA.'),
         ],
       ),
     );

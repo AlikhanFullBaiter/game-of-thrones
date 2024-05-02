@@ -63,7 +63,7 @@ class MainPage extends StatelessWidget {
             ),
             Divider(), // Add a divider between list items
             ListTile(
-              title: Text('List of actors'),
+              title: Text('List of Actors'),
               onTap: () {
                 Navigator.pushNamed(context, '/actorsList');
               },

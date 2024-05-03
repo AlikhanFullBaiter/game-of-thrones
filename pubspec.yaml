@@ -60,12 +60,15 @@ flutter:
   assets:
     - assets/img/logo.webp
     - assets/img/harington.jpg
-    - assets/img/emilia.jpg
-    - assets/img/peter.jpeg
-    - assets/img/david.jpeg
-    - assets/img/db.jpeg
-    - assets/img/miguel.jpeg
-
+    - assets/img/clarke.jpg
+    - assets/img/dinklage.jpg
+    - assets/img/coster-waldau.jpg
+    - assets/img/williams.jpg
+    - assets/img/turner.jpg
+    - assets/img/headey.jpg
+    - assets/img/glen.jpg
+    - assets/img/hempstead-wright.jpg
+    - assets/img/allen.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

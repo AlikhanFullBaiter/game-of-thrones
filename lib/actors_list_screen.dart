@@ -17,16 +17,59 @@ class ActorsListScreen extends StatelessWidget {
               'Kit Harington is a British actor best known for his role as Jon Snow in the Game of Thrones series. He was born on December 26, 1986, in Acton, London. Harington studied acting at the Royal Central School of Speech & Drama, graduating in 2008.'),
           buildActorItem(
               context,
-              'assets/img/emilia.jpg',
+              'assets/img/clarke.jpg',
               'Emilia Clarke',
               'Daenerys Targaryen',
-              'Emilia Clarke is an English actress known for her role as Daenerys Targaryen in the Game of Thrones series. She was born on October 23, 1986, in London, England.'),
+              'Emilia Clarke is an English actress known for her role as Daenerys Targaryen in the Game of Thrones series. She was born on October 23, 1986, in London. Clarke attended the Drama Centre London and graduated in 2009.'),
           buildActorItem(
               context,
-              'assets/img/peter.jpeg',
+              'assets/img/dinklage.jpg',
               'Peter Dinklage',
               'Tyrion Lannister',
-              'Peter Dinklage is an American actor known for his role as Tyrion Lannister in the Game of Thrones series. He was born on June 11, 1969, in Morristown, New Jersey, USA.'),
+              'Peter Dinklage is an American actor known for his role as Tyrion Lannister in the Game of Thrones series. He was born on June 11, 1969, in Morristown, New Jersey. Dinklage studied acting at Bennington College, graduating in 1991.'),
+          buildActorItem(
+              context,
+              'assets/img/headey.jpg',
+              'Lena Headey',
+              'Cersei Lannister',
+              'Lena Headey is an English actress known for her role as Cersei Lannister in the Game of Thrones series. She was born on October 3, 1973, in Hamilton, Bermuda. Headey attended Shelley College and then went on to pursue acting.'),
+          buildActorItem(
+              context,
+              'assets/img/coster-waldau.jpg',
+              'Nikolaj Coster-Waldau',
+              'Jaime Lannister',
+              'Nikolaj Coster-Waldau is a Danish actor known for his role as Jaime Lannister in the Game of Thrones series. He was born on July 27, 1970, in Rudkøbing, Denmark. Coster-Waldau studied at the Danish National School of Theatre and Contemporary Dance.'),
+          buildActorItem(
+              context,
+              'assets/img/williams.jpg',
+              'Maisie Williams',
+              'Arya Stark',
+              'Maisie Williams is an English actress known for her role as Arya Stark in the Game of Thrones series. She was born on April 15, 1997, in Bristol, England. Williams attended Bath Dance College.'),
+          buildActorItem(
+              context,
+              'assets/img/turner.jpg',
+              'Sophie Turner',
+              'Sansa Stark',
+              'Sophie Turner is an English actress known for her role as Sansa Stark in the Game of Thrones series. She was born on February 21, 1996, in Northampton, England. Turner attended Warwick Prep School and later Kings High School in Warwick.'),
+          buildActorItem(
+              context,
+              'assets/img/glen.jpg',
+              'Iain Glen',
+              'Jorah Mormont',
+              'Iain Glen is a Scottish actor known for his role as Jorah Mormont in the Game of Thrones series. He was born on June 24, 1961, in Edinburgh, Scotland. Glen studied at the Royal Academy of Dramatic Art.'),
+          buildActorItem(
+              context,
+              'assets/img/hempstead-wright.jpg',
+              'Isaac Hempstead Wright',
+              'Bran Stark',
+              'Isaac Hempstead Wright is an English actor known for his role as Bran Stark in the Game of Thrones series. He was born on April 9, 1999, in Surrey, England. Wright attended Queen Elizabeth Grammar School in Faversham, Kent.'),
+          buildActorItem(
+              context,
+              'assets/img/allen.jpg',
+              'Alfie Allen',
+              'Theon Greyjoy',
+              'Alfie Allen is an English actor known for his role as Theon Greyjoy in the Game of Thrones series. He was born on September 12, 1986, in Hammersmith, London, England. Allen studied at Fine Arts College in Hampstead.'),
+          // Add more actors here...
         ],
       ),
     );

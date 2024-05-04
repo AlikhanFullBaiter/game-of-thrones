@@ -1,8 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:lab5/firebase_options.dart';
 import 'stuff_list_screen.dart'; // Import the StuffListScreen file
 import 'actors_list_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(GameOfThronesApp());
 }
 
@@ -18,7 +24,7 @@ class GameOfThronesApp extends StatelessWidget {
           accentColor: Colors.redAccent,
         ),
         scaffoldBackgroundColor: Colors.grey[200],
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Colors.black,
           foregroundColor: Colors.white,
         ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55598441253",
+    "project_id": "unique-app-game-of-thrones",
+    "storage_bucket": "unique-app-game-of-thrones.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55598441253:android:f5f71ea192378d829870cc",
+        "android_client_info": {
+          "package_name": "com.example.lab5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcuaw1L2q0c9LHeigmVlFoKZWDjMclM9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

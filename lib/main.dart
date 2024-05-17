@@ -6,8 +6,8 @@ import 'package:lab5/pages/auth_page.dart';
 import 'package:lab5/pages/divider_page.dart';
 import 'package:lab5/pages/forgot_password_page.dart';
 import 'package:lab5/services/auth_service.dart';
-import 'stuff_list_screen.dart'; // Import the StuffListScreen file
-import 'actors_list_screen.dart';
+import 'pages/stuff_list_screen.dart'; // Import the StuffListScreen file
+import 'pages/actors_list_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

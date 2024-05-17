@@ -1,6 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:lab5/firebase_options.dart';
+import 'package:lab5/pages/auth_page.dart';
+import 'package:lab5/pages/divider_page.dart';
+import 'package:lab5/pages/forgot_password_page.dart';
+import 'package:lab5/services/auth_service.dart';
 import 'stuff_list_screen.dart'; // Import the StuffListScreen file
 import 'actors_list_screen.dart';
 
@@ -29,8 +34,12 @@ class GameOfThronesApp extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: MainPage(),
+      initialRoute: DividerPage.route,
       routes: {
+        DividerPage.route: (context) => DividerPage(),
+        AuthPage.route: (context) => AuthPage(),
+        MainPage.route: (context) => MainPage(),
+        ForgotScreen.route: (context) => ForgotScreen(),
         '/stuffList': (context) =>
             StuffListScreen(), // Add route for StuffListScreen
         '/actorsList': (context) =>
@@ -41,11 +50,20 @@ class GameOfThronesApp extends StatelessWidget {
 }
 
 class MainPage extends StatelessWidget {
+  static const String route = 'main-page';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Game of Thrones'),
+        actions: [
+          IconButton(
+              onPressed: () async {
+                await FirebaseAuth.instance.signOut();
+                Navigator.pushReplacementNamed(context, DividerPage.route);
+              },
+              icon: Icon(Icons.logout))
+        ],
       ),
       drawer: Drawer(
         child: Column(

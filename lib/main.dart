@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:lab5/firebase_options.dart';
 import 'package:lab5/pages/auth_page.dart';
+import 'package:lab5/pages/calendar_page.dart';
 import 'package:lab5/pages/divider_page.dart';
 import 'package:lab5/pages/forgot_password_page.dart';
 import 'package:lab5/services/auth_service.dart';
@@ -36,6 +37,7 @@ class GameOfThronesApp extends StatelessWidget {
       ),
       initialRoute: DividerPage.route,
       routes: {
+        CalendarScreen.route: (context) => CalendarScreen(),
         DividerPage.route: (context) => DividerPage(),
         AuthPage.route: (context) => AuthPage(),
         MainPage.route: (context) => MainPage(),
@@ -79,6 +81,7 @@ class MainPage extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
+
             ListTile(
               title: Text('List of Stuff'),
               onTap: () {
@@ -90,6 +93,14 @@ class MainPage extends StatelessWidget {
               title: Text('List of Actors'),
               onTap: () {
                 Navigator.pushNamed(context, '/actorsList');
+              },
+            ),
+            Divider(), // Add a divider between list items
+
+            ListTile(
+              title: Text('Calendar'),
+              onTap: () {
+                Navigator.pushNamed(context, CalendarScreen.route);
               },
             ),
           ],

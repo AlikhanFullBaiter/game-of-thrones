@@ -6,6 +6,7 @@ import 'package:lab5/pages/auth_page.dart';
 import 'package:lab5/pages/calendar_page.dart';
 import 'package:lab5/pages/divider_page.dart';
 import 'package:lab5/pages/forgot_password_page.dart';
+import 'package:lab5/pages/news_list.dart';
 import 'package:lab5/services/auth_service.dart';
 import 'pages/stuff_list_screen.dart'; // Import the StuffListScreen file
 import 'pages/actors_list_screen.dart';
@@ -41,6 +42,7 @@ class GameOfThronesApp extends StatelessWidget {
         DividerPage.route: (context) => DividerPage(),
         AuthPage.route: (context) => AuthPage(),
         MainPage.route: (context) => MainPage(),
+        NewsList.route: (context) => NewsList(),
         ForgotScreen.route: (context) => ForgotScreen(),
         '/stuffList': (context) =>
             StuffListScreen(), // Add route for StuffListScreen
@@ -101,6 +103,14 @@ class MainPage extends StatelessWidget {
               title: Text('Calendar'),
               onTap: () {
                 Navigator.pushNamed(context, CalendarScreen.route);
+              },
+            ),
+            Divider(), // Add a divider between list items
+
+            ListTile(
+              title: Text('News'),
+              onTap: () {
+                Navigator.pushNamed(context, NewsList.route);
               },
             ),
           ],
